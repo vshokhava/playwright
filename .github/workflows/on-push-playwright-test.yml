@@ -16,7 +16,7 @@ jobs:
       run: docker build -f Dockerfile.official .
     # Запуск Docker Container и запуск тестов в нем
     - name: Run Docker container with Playwright tests
-      run: docker run playwright_official
+      run: docker run mcr.microsoft.com/playwrigh
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
